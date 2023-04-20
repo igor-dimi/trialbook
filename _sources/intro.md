@@ -1,3 +1,4 @@
+(my-label)=
 # Welcome to your Jupyter Book
 
 This is a small sample book to give you a feel for how book content is
@@ -19,3 +20,4 @@ And here is a code block:
 e = mc^2
 ```
 
+there's some text and this is the [label](my-label)
