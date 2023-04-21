@@ -20,4 +20,18 @@ And here is a code block:
 e = mc^2
 ```
 
-there's some text and this is the [label](my-label)
+<!-- there's some text and this is the [label](my-label)
+
+Here is some citation {cite}`bourne1983unix`.
+
+adding multiple citations: {cite}`ruby,holdgraf_rapid_2016`
+
+another citation {cite}`ruby` -->
+
+Here is some citation {cite}`bourne1983unix`.
+
+
+## Bibliography
+
+```{bibliography} ./references.bib
+```

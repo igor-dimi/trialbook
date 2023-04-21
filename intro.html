@@ -329,7 +329,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -345,6 +347,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliography">Bibliography</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -377,7 +387,24 @@ It does not go in-depth into any particular topic - check out <a class="referenc
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">e</span> <span class="o">=</span> <span class="n">mc</span><span class="o">^</span><span class="mi">2</span>
 </pre></div>
 </div>
-<p>there’s some text and this is the <a class="reference internal" href="#my-label"><span class="std std-ref">label</span></a></p>
+<!-- there's some text and this is the [label](my-label)
+
+Here is some citation {cite}`bourne1983unix`.
+
+adding multiple citations: {cite}`ruby,holdgraf_rapid_2016`
+
+another citation {cite}`ruby` -->
+<p>Here is some citation <span id="id1">[<a class="reference internal" href="#id5" title="S.R. Bourne. The UNIX System. Int. Comput. Sci. Series. Addison-Wesley, 1983. ISBN 9780201137910. URL: https://books.google.de/books?id=Bq9QAAAAMAAJ.">Bourne, 1983</a>]</span>.</p>
+<section id="bibliography">
+<h2>Bibliography<a class="headerlink" href="#bibliography" title="Permalink to this headline">#</a></h2>
+<div class="docutils container" id="id2">
+<dl class="citation">
+<dt class="label" id="id5"><span class="brackets"><a class="fn-backref" href="#id1">Bou83</a></span></dt>
+<dd><p>S.R. Bourne. <em>The UNIX System</em>. Int. Comput. Sci. Series. Addison-Wesley, 1983. ISBN 9780201137910. URL: <a class="reference external" href="https://books.google.de/books?id=Bq9QAAAAMAAJ">https://books.google.de/books?id=Bq9QAAAAMAAJ</a>.</p>
+</dd>
+</dl>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -429,6 +456,20 @@ It does not go in-depth into any particular topic - check out <a class="referenc
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliography">Bibliography</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
